@@ -1,2 +1,58 @@
-# speed
-PotPlayer长按方向键3倍数播放视频，实现哔哩哔哩播放效果/PotPlayer long press the direction key 3 times to play the video, achieve Bilibili playback effect
+# PotPlayer 增强播放脚本  
+
+**无需安装任何软件，纯系统原生实现！一次配置，永久生效！**  
+
+本脚本为 PotPlayer 带来哔哩哔哩风格的快捷键体验：  
+- 长按右方向键（→）0.3 秒触发 3 倍速播放（按住不放持续加速）  
+- 短按右方向键（→）快速前进 5 秒（松开按键时触发）  
+- 长按左方向键（←）持续回退 5 秒（按下即触发）  
+- 按 **Ctrl+Alt+T** 可随时终止脚本运行  
+
+
+## 🚀 功能亮点  
+
+| 操作方式       | 右方向键（→）              | 左方向键（←）          |  
+|----------------|---------------------------|-----------------------|  
+| 短按（快速松开）| 快进 5 秒                 | 回退 5 秒             |  
+| 长按（持续按住）| 0.3 秒后触发 3 倍速播放    | 持续回退 5 秒         |  
+
+
+## ⚙️ 使用步骤  
+
+### 1. 配置 PotPlayer 热键  
+1. 打开 PotPlayer → 右键点击播放窗口 → **选项 → 热键**  
+2. 设置以下功能的热键：  
+   - 前进 5 秒：→（右方向键）  
+   - 后退 5 秒：←（左方向键）  
+   - 3 倍速播放：建议设为 **Ctrl+3**  
+   - 恢复正常速度：建议设为 **Ctrl+1**  
+
+### 2. 部署脚本文件  
+1. 下载本项目发布的 `.exe` 文件  
+2. 将文件复制到系统启动文件夹： 
+**C:\Users\你的用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup**
+3. 双击运行或重启电脑自动启动  
+
+### 3. 脚本控制  
+- 按 **Ctrl+Alt+T** 终止脚本运行  
+- 如需重新启动，再次双击启动文件夹中的脚本文件  
+
+
+## 📷 配置示例  
+### 1/2设置PotPlayer
+![PotPlayer 热键设置](https://github.com/user-attachments/assets/20a7eb42-e4e0-47df-a890-415f087535e8)  
+### 2/2设置PotPlayer
+![PotPlayer 倍速设置](https://github.com/user-attachments/assets/9f3141e9-3351-47b8-be41-5703f0ef9060)  
+![文件复制到系统启动文件夹](https://github.com/user-attachments/assets/d33e084c-3969-4d73-a92b-cef71afefe46)
+
+
+## ✅ 技术说明  
+- 采用低级别键盘钩子，响应迅速且不干扰其他操作  
+- 智能区分短按/长按逻辑，提供流畅播放体验  
+- 支持开机自动启动，配置一次永久有效  
+
+
+## 🛠️ 注意事项  
+- 请确保 PotPlayer 已正确设置所需热键  
+- 脚本运行时在后台驻留，不影响前台程序使用  
+- 如需卸载，直接删除启动文件夹中的脚本文件即可  
